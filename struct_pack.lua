@@ -57,7 +57,10 @@ function get_struct_pack(str)
         "weather_jungle",
         "digi_vend",
         "big_lock",
-        "huge_lock"
+        "huge_lock",
+        "thanksgiving_bell_pack",
+        "thanksgiving_bell",
+        "thanksgiving_weather"
     }
 
 
@@ -945,6 +948,41 @@ function get_struct_pack(str)
                 206
             },
             gems = 500,
+        },
+        thanksgivepack = {
+            name = "thanksgiving_bell_pack",
+            total_item = 2,
+            def_item = {
+                "Thanksgiving Bell",
+                "Turkey Sucker",
+            },
+            item_id = {
+                7342,
+                10292
+            },
+            gems = 20000,
+        },
+        thanksgivebell  = {
+            name = "thanksgiving_bell",
+            total_item = 1,
+            def_item = {
+                "Thanksgiving Bell"
+            },
+            item_id = {
+                7342
+            },
+            gems = 7500,
+        },
+        thanksweather = {
+            name = "thanksgiving_weather",
+            total_item = 1,
+            def_item = {
+                "Weather Machine - Mt. Growmore"
+            },
+            item_id = {
+                12844
+            },
+            gems = 30000,
         }
     }
 
@@ -1064,5 +1102,11 @@ function get_struct_pack(str)
         return struct_data.biglock
     elseif k == 58 then
         return struct_data.huge_lock
+    elseif k == 59 then
+        return struct_data.thanksgivepack
+    elseif k == 60 then
+        return struct_data.thanksgivebell
+    elseif k == 61 then
+        return struct_data.thanksweather
     end
 end
