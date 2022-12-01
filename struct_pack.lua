@@ -60,7 +60,8 @@ function get_struct_pack(str)
         "huge_lock",
         "thanksgiving_bell_pack",
         "thanksgiving_bell",
-        "thanksgiving_weather"
+        "thanksgiving_weather",
+        "winterfest_calendar_2022"
     }
 
 
@@ -983,6 +984,17 @@ function get_struct_pack(str)
                 12844
             },
             gems = 30000,
+        },
+        calendar2022 = {
+            name = "winterfest_calendar_2022",
+            total_item = 1,
+            def_item = {
+                "winterfest_calendar_2022"
+            },
+            item_id = {
+                12986
+            },
+            gems = 65000,
         }
     }
 
@@ -1101,12 +1113,14 @@ function get_struct_pack(str)
     elseif k == 57 then
         return struct_data.biglock
     elseif k == 58 then
-        return struct_data.huge_lock
+        return struct_data.hugelock
     elseif k == 59 then
         return struct_data.thanksgivepack
     elseif k == 60 then
         return struct_data.thanksgivebell
     elseif k == 61 then
         return struct_data.thanksweather
+    elseif k == 62 then
+        return struct_data.calendar2022
     end
 end
