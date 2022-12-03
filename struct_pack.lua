@@ -61,7 +61,8 @@ function get_struct_pack(str)
         "thanksgiving_bell_pack",
         "thanksgiving_bell",
         "thanksgiving_weather",
-        "winterfest_calendar_2022"
+        "winterfest_calendar_2022",
+        "Diamond_Provider"
     }
 
 
@@ -995,6 +996,17 @@ function get_struct_pack(str)
                 12986
             },
             gems = 65000,
+        },
+        bonanza = {
+            name = "Diamond_Provider",
+            total_item = 1,
+            def_item = {
+                "Diamond Builders Bonanza"
+            },
+            item_id = {
+                10450
+            },
+            gems = 45000,
         }
     }
 
@@ -1122,5 +1134,7 @@ function get_struct_pack(str)
         return struct_data.thanksweather
     elseif k == 62 then
         return struct_data.calendar2022
+    elseif k == 63 then
+        return struct_data.bonanza
     end
 end
