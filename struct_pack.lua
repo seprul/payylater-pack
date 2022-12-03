@@ -990,7 +990,7 @@ function get_struct_pack(str)
             name = "winterfest_calendar_2022",
             total_item = 1,
             def_item = {
-                "winterfest_calendar_2022"
+                "Winter Fest Calendar - 2022"
             },
             item_id = {
                 12986
