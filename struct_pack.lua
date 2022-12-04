@@ -62,8 +62,10 @@ function get_struct_pack(str)
         "thanksgiving_bell",
         "thanksgiving_weather",
         "winterfest_calendar_2022",
-        "Diamond_Provider"
+        "Diamond_Provider",
+        "grow_spray"
     }
+
 
     local function get_index(n)
         for index, a in pairs(namepack) do
@@ -1006,6 +1008,17 @@ function get_struct_pack(str)
                 10450
             },
             gems = 45000,
+        },
+        gspray = {
+            name = "grow_spray",
+            total_item = 1,
+            def_item = {
+                "Grow Spray Fertilizer"
+            },
+            item_id = {
+                228
+            },
+            gems = 200,
         }
     }
 
@@ -1135,5 +1148,7 @@ function get_struct_pack(str)
         return struct_data.calendar2022
     elseif k == 63 then
         return struct_data.bonanza
+    elseif k == 64 then
+        return struct_data.gspray
     end
 end
