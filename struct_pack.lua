@@ -65,7 +65,6 @@ function get_struct_pack(str)
         "Diamond_Provider"
     }
 
-
     local function get_index(n)
         for index, a in pairs(namepack) do
             if n == a then
